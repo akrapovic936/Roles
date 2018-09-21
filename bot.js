@@ -4,7 +4,7 @@ const prefix = '$'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Dating Roles |$roles `,"http://twitch.tv/S-F")
+client.user.setGame(`First Love by Luca |$roles `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -30,7 +30,7 @@ client.user.setGame(`Dating Roles |$roles `,"http://twitch.tv/S-F")
 
 
 
-const developers = ["348555232529219585","487314985362391060"]
+const developers = ["487356411391770625","487314985362391060" , "491806666002530346"]
 const adminprefix = "$";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -69,7 +69,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 
 client.on('message', msg => {//msg
     if (msg.content === 'colors') {
-      if (msg.channel.id !== "469301174542270464") return;
+      if (msg.channel.id !== "492514088367423498") return;
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/466153403475558400/469301275180400651/colors1.png"})
     }
   });;
@@ -79,7 +79,7 @@ const Client = require('discord.js');
 client.on('message', message => {
     let args = message.content.split(' ').slice(1);
 if(message.content.split(' ')[0] == 'color'){
-if (message.channel.id !== "469301174542270464") return;
+if (message.channel.id !== "492514088367423498") return;
      const embedd = new Discord.RichEmbed()
 .setFooter('Requested by '+message.author.username, message.author.avatarURL)
 .setDescription(`**There's No Color With This Number ** ❌ `)
@@ -289,7 +289,7 @@ $remove     To remove a role
 
 
 
-client.on('message', message => {  //Dating Roles Bot Created By Larpraz And Night Blade
+client.on('message', message => {  //First Love by Luca
   if (message.content.startsWith('$remove Otaku')) {
      if(!message.channel.guild) return;
   message.member.removeRole(message.guild.roles.find("name", "Otaku"));
@@ -310,7 +310,7 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {  //Dating Roles Bot Created By Larpraz And Night Blade
+client.on('message', message => {  //First Love by Luca
   if (message.content.startsWith('$remove NA')) {
      if(!message.channel.guild) return;
   message.member.removeRole(message.guild.roles.find("name", "[NA] North America"));
@@ -337,7 +337,7 @@ client.on('message', message => {
  }); 
 
 
-client.on('message', message => {  //Dating Roles Bot Created By Larpraz And Night Blade
+client.on('message', message => {  //First Love by Luca
   if (message.content.startsWith('$remove NZ')) {
      if(!message.channel.guild) return;
   message.member.removeRole(message.guild.roles.find("name", "[NZ] New Zealand"));
@@ -355,7 +355,7 @@ client.on('message', message => {
  }); 
 
 
-client.on('message', message => {  //Dating Roles Bot Created By Larpraz And Night Blade
+client.on('message', message => {  //First Love by Luca
   if (message.content.startsWith('$remove EU')) {
      if(!message.channel.guild) return;
   message.member.removeRole(message.guild.roles.find("name", "[EU] Dubai"));
@@ -1117,7 +1117,7 @@ client.on('message', rebel => {
                   if(!rebel.channel.guild) return rebel.reply('** This command only for servers **');
                              if(!rebel.member.hasPermission('ADMINISTRATOR')) return      rebel.channel.send('**You Dont Have permission** `ADMINISTRATOR`' );
                   const embed = new Discord.RichEmbed()
-        .setDescription('** Hey [Larpraz] and [ℕїℊℌ⊥ ßʟαⅾℯ] im creating the roles right now !**')
+        .setDescription('** Hey im Luca im creating the roles right now !**')
     rebel.channel.sendEmbed(embed);
     
         rebel.guild.createRole({
